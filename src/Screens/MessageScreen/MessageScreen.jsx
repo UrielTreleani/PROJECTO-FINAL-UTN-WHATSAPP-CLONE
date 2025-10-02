@@ -29,7 +29,8 @@ export function MessageScreen() {
       </div>
       <div>
         <ContactHeader
-        name={contactDetail.name}
+        name={contactDetail?.name}
+        img={contactDetail?.profile_img}
         />
       </div>
       <div>

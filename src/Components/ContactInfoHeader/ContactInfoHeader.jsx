@@ -7,8 +7,6 @@ import { ContactDetailContext } from "../../Contexts/ContactDetailsContext"
 
 export function ContactHeader(props){
 
-    const { contactDetail } = useContext(ContactDetailContext)
-    console.log(contactDetail)
 return(
     <div>
         <div>
