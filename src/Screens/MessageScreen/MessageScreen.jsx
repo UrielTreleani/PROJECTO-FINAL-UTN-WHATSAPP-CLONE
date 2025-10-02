@@ -28,16 +28,19 @@ export function MessageScreen() {
         </div>
       </div>
       <div>
-        <ContactHeader
-        name={contactDetail?.name}
-        img={contactDetail?.profile_img}
-        />
+
       </div>
       <div>
         {isContactDetailLoading ? (
           <WhatsAppSpinner />
         ) : contactDetail ? (
-          <MessageList messages={contactDetail.messages} />
+          <div>
+            <MessageList messages={contactDetail.messages} />
+            <ContactHeader
+            name={contactDetail?.name}
+            img={contactDetail?.profile_img}
+            />
+          </div>
         ) : (
           <span>Mensaje no encontrado</span>
         )}
