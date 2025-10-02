@@ -3,7 +3,7 @@ const contacts = [
         id: 1,
         name: 'Joaco',
         last_time_connected: 'últ. vez hoy a la(s) 17:47',
-        profile_img: '/public/profile-image.png',
+        profile_img: '/profile-image.png',
         last_message: "Perfecto, mañana nos vemos",
         messages: [
             {
