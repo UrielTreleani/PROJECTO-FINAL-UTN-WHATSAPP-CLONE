@@ -1,0 +1,23 @@
+.message-screen__container{
+    display: flex;
+    flex-direction: row;
+    background-color:#161717;
+    height: 100vh;
+}
+
+.section-messages__container{
+    width: 100vw;
+}
+
+.section-messages__message-form{
+    display: flex;
+    flex-direction: row;
+    width: 879px;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+}
+
+.message-content{
+    color: #FAFAFA;
+}
