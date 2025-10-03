@@ -1,0 +1,39 @@
+.message-screen__contact-header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.message-screen__contact-header-buttons-container{
+    display: flex;
+    flex-direction: row;
+    padding: 13px 13px 0 0;
+    gap: 15px;
+}
+
+.message-screen__contact-header-contact-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0 0 10px;
+}
+
+.contact-header__name{
+    font-size: 25px;
+    color: white;
+}
+
+.message-screen__contact-header-profile-image-container img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid  rgb(84, 121, 202);
+}
+
+.contact-header__icon{
+    font-size: 25px;
+}

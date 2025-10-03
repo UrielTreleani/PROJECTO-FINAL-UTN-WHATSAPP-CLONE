@@ -2,20 +2,37 @@
     display: flex;
     flex-direction: row;
     background-color:#161717;
-    height: 100vh;
+    height: 100%;
+    width: 100vw;
+}
+
+.message-screen__section-message-container{
+    width: 100%;
+    height: 100%;
+}
+
+.message-screen__section-message{
+    height: 100%;
+     background-image: url("/chat-bg-dark.png");
+  background-size: cover;       /* que ocupe todo el contenedor */
+  background-position: center;  /* centrado */
+  background-repeat: no-repeat; /* que no se repita */
+  /* opcional: poner un color detrás si la imagen no cubre */
+  background-color: #0a1014;    /* un gris/negro oscuro de respaldo */
+  color: #ffffff; 
 }
 
 .section-messages__container{
     width: 100vw;
 }
 
-.section-messages__message-form{
+.message-screen__messages-container{
+    background-color: grey;
+}
+
+.form-container{
     display: flex;
-    flex-direction: row;
-    width: 879px;
     justify-content: center;
-    position: fixed;
-    bottom: 0px;
 }
 
 .message-content{

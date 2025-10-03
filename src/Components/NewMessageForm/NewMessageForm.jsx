@@ -1,4 +1,4 @@
-
+import "./NewMessageForm.css"
 
 export const NewMessageForm = (props)=>{
 
@@ -13,7 +13,7 @@ export const NewMessageForm = (props)=>{
     }
 
     return(
-        <div className="section-messages__message-form">
+        <div className="section-messages__message-form-container">
             <form onSubmit={handleSubmit}>
                 <label htmlFor="mensaje">Escribe un mensaje</label>
                 <textarea name="mensaje" id="mensaje">

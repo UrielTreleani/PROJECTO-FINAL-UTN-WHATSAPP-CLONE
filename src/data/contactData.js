@@ -3,7 +3,7 @@ const contacts = [
         id: 1,
         name: 'Joaco',
         last_time_connected: 'últ. vez hoy a la(s) 17:47',
-        profile_img: '/profile-image.png',
+        profile_img: '/profile-image__joaco.jpg',
         last_message: "Perfecto, mañana nos vemos",
         messages: [
             {
@@ -36,7 +36,7 @@ const contacts = [
         id: 2,
         name: 'Gonzalo',
         last_time_connected: 'en línea',
-        profile_img: '/profile-image.png',
+        profile_img: '/profile-image__gonzalo.jpg',
         last_message: "Bueno, después paso y la reviso",
         messages: [
             {
@@ -69,7 +69,7 @@ const contacts = [
         id: 3,
         name: 'Bruno',
         last_time_connected: 'últ. vez hoy a la(s) 18:00',
-        profile_img: '/profile-image.png',
+        profile_img: '/profile-image__bruno.png',
         last_message: "De nada, nos vemos mañana.",
         messages: [
             {
@@ -102,7 +102,7 @@ const contacts = [
         id: 4,
         name: 'Joel',
         last_time_connected: 'en línea',
-        profile_img: '/profile-image.png',
+        profile_img: '/profile-image__joel.png',
         last_message: "Genial, así lo reviso tranquilo.",
         messages: [
             {
