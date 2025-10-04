@@ -131,6 +131,40 @@ const contacts = [
             }
         ]
     },
+    {
+        id: 5,
+        name: 'Ulises',
+        last_time_connected: 'en línea',
+        profile_img: '/profile-image__ulises.jpg',
+        last_message: "Genial, así lo reviso tranquilo.",
+        messages: [
+            {
+                id: 1,
+                author: 'Yo',
+                content: "Te paso el trabajo práctico en un rato.",
+                timestamp: '16:17'
+            },
+            {
+                id: 2,
+                author: 'Joel',
+                content: "Dale, ¿antes de las 8 podés?",
+                timestamp: '16:18'
+            },
+                        {
+                id: 3,
+                author: 'Yo',
+                content: "Sí, lo mando a las 7",
+                timestamp: '16:18'
+            },
+                        {
+                id: 4,
+                author: 'Joel',
+                content: "Genial, así lo reviso tranquilo.",
+                timestamp: '16:18'
+            }
+        ]
+    }
+    
 
 ]
 

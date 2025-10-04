@@ -1,40 +1,58 @@
-.message-screen__container{
+.message-screen__container {
     display: flex;
     flex-direction: row;
-    background-color:#161717;
-    height: 100%;
-    width: 100vw;
+    background-color: #161717; /* fondo oscuro estilo WhatsApp */
+    height: 100vh;
+    width: 100%;
 }
 
-.message-screen__section-message-container{
+/* Lista de contactos */
+.message-screen__contacts-container {
+    border-right: 1px solid #414242;
+}
+
+/* Sección de mensajes */
+.message-screen__section-message-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
+    background-color: #0d0d0d;
 }
 
-.message-screen__section-message{
-    height: 100%;
-     background-image: url("/chat-bg-dark.png");
-  background-size: cover;       /* que ocupe todo el contenedor */
-  background-position: center;  /* centrado */
-  background-repeat: no-repeat; /* que no se repita */
-  /* opcional: poner un color detrás si la imagen no cubre */
-  background-color: #0a1014;    /* un gris/negro oscuro de respaldo */
-  color: #ffffff; 
-}
-
-.section-messages__container{
-    width: 100vw;
-}
-
-.message-screen__messages-container{
-    background-color: grey;
-}
-
-.form-container{
+/* Chat completo (header + mensajes) */
+.message-screen__section-message {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    flex: 1; /* ocupa todo lo posible */
+    overflow: hidden;
 }
 
-.message-content{
-    color: #FAFAFA;
+/* Header fijo arriba */
+.message-screen__contact-header-container {
+    position: sticky;
+    top: 0;
+    background-color: #202c33; /* tono header WhatsApp */
+    z-index: 10;
+    border-bottom: 1px solid #414242;
+}
+
+/* Mensajes con scroll */
+.message-screen__messages-container {
+    flex: 1;
+    background-color: #111b21; /* fondo chat oscuro */
+    overflow-y: auto;
+    padding: 12px;
+}
+
+/* Texto de mensajes */
+.message-content {
+    color: #fafafa;
+}
+
+/* Form abajo */
+.message-screen__form-container {
+    background-color: #202c33;
+    padding: 8px;
+    border-top: 1px solid #414242;
 }

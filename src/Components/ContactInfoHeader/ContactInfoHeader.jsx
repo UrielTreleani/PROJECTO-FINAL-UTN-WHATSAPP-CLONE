@@ -1,19 +1,24 @@
-import "./ContactHeader.css"
+import "./ContactInfoHeader.css"
 
 
 export function ContactHeader(props){
 
 return(
-    <div className="message-screen__contact-header-container">
-        <div className="message-screen__contact-header-contact-info">
-            <div className="message-screen__contact-header-profile-image-container">
+    <div className="contact-header__container">
+        <div className="contact-header__contact-info">
+            <div className="contact-header__profile-image-container">
                 <img src={props.img} alt="profile-img"/>
             </div>
-            <div className="contact-header__name">
+            <div className="contact-header__contact-name">
+                <span>
                 {props.name}
+                </span>
+                <span className="contact-header__contact-last-connection">
+                    {props.last_connection}
+                </span>
             </div>
         </div>
-        <div className="message-screen__contact-header-buttons-container">
+        <div className="contact-header__buttons-container">
             <span>
                 <i className="bi bi-camera-video contact-header__icon"></i>
             </span>

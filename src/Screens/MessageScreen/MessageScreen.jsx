@@ -19,8 +19,7 @@ export function MessageScreen() {
       <div className="contact-list__aside-container">
         <ContactListAside />
       </div>
-
-      <div className="section__contacts">
+      <div className="message-screen__contacts-container">
         <div>
           <ContactListHeader />
         </div>
@@ -37,6 +36,7 @@ export function MessageScreen() {
               <ContactHeader
                 name={contactDetail?.name}
                 img={contactDetail?.profile_img}
+                last_connection={contactDetail?.last_time_connected}
               />
             </div>
             <div className="message-screen__messages-container">
@@ -46,7 +46,7 @@ export function MessageScreen() {
         ) : (
           <span>Mensaje no encontrado</span>
         )}
-        <div className="form-container">
+        <div className="message-screen__form-container">
           <NewMessageForm onCreateNewMessage={onCreateNewMenssage} />
         </div>
       </div>

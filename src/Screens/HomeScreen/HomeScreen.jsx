@@ -4,7 +4,6 @@ import ContactListHeader from '../../Components/ContactListHeader/ContactListHea
 import ContactListAside from '../../Components/ContactListAside/ContactListAside'
 import WhatsAppSpinner from "../../Components/Loader/Loader";
 import "./HomeScreen.css"
-import "../../styles/screens.css"
 
 const HomeScreen = () => {
     return (
@@ -13,7 +12,7 @@ const HomeScreen = () => {
                 <ContactListAside />
             </div>
             <div className='home-screen__contacts-container'>
-                <div className='section__contacts'>
+                <div>
                     <div>
                         <ContactListHeader />
                     </div>
@@ -21,12 +20,12 @@ const HomeScreen = () => {
                         <ContactList/>
                     </div>
                 </div>
-                <div className='home-screen__unselected-contact-container'>
-                    <div>
-                        <WhatsAppSpinner />
-                    </div>
-                    <span>Selecciona un contacto</span>
+            </div>
+            <div className='home-screen__unselected-contact-container'>
+                <div>
+                    <WhatsAppSpinner />
                 </div>
+                <span>Selecciona un contacto</span>
             </div>
         </div>
     )

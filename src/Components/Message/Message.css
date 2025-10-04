@@ -1,0 +1,36 @@
+.message__content-container{
+    width: 100%;
+}
+
+.message-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.message-author__other{
+    display: flex;
+    justify-content: start;
+}
+
+.message-author__yo{
+    display: flex;
+    justify-content: end;
+    padding-right: 62px;
+}
+
+.message-author__other div{
+    display: flex;
+    justify-content: start;
+    background-color: #144d37;
+    margin-left: 62px;
+}
+
+.message-author__yo div{
+    display: flex;
+    justify-content: end;
+    background-color: #242626;
+}
