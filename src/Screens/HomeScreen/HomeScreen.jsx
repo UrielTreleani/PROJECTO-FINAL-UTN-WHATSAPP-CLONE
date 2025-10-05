@@ -12,8 +12,8 @@ const HomeScreen = () => {
                 <ContactListAside />
             </div>
             <div className='home-screen__contacts-container'>
-                <div>
-                    <div>
+                <div className='home-screen__contacts'>
+                    <div className='home-screen__contact-list-header-container'>
                         <ContactListHeader />
                     </div>
                     <div>

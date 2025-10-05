@@ -1,8 +1,9 @@
-.contact-list-header__container{
+.contact-list__header{
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
+    padding: 0 0 0 15px;
     color: #FAFAFA;
+    width: 100%;
 }
 
 .contact-list-header__new-message{
@@ -10,7 +11,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
+    margin: 15px 0 0 0;
 }
 
 .contact-list-header__buttons-container{
@@ -63,12 +64,52 @@
 }
 
 .contact-list-header__filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: #2e2f2f 2px solid;
     border-radius: 15px;
     color: #abacac;
     padding: 0 15px;
+    height: 30px;
 }
 
 .header__icon{
     font-size: 20px;
+}
+
+@media screen and (max-width: 1024px){
+    .contact-list-header__container{
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .contact-list-header__search{
+        width: 100%;
+    }
+
+    .contact-list-header__chat-filters{
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 430px){
+
+    .contact-list-header__title{
+        font-size: 20px;
+    }
+
+    .contact-list-header__search span{
+        font-size: 12px;
+    }
+
+    .contact-list-header__chat-filters{
+        justify-content: space-between;
+    }
+
+    .contact-list-header__filter{
+        font-size: 8px;
+        padding: 8px;
+    }
 }

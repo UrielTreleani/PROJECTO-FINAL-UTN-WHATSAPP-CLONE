@@ -49,3 +49,22 @@
     object-fit: cover;
     border: 2px solid  rgb(84, 121, 202);
 }
+
+@media screen and (max-width: 550px){
+    .contact__container{
+    width: 100%;
+    }
+
+    .contact-name{
+        font-size: 14px;
+    }
+
+    .contact-last-message{
+        font-size: 10px;
+    }
+
+    .profile-image__container img{
+        width: 43px;
+        height: 43px;
+    }
+}

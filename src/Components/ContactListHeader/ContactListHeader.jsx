@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 
 function ContactListHeader() {
     return (
-    <div className='contact-list-header__container'>
+    <div className='contact-list__header'>
         <div className='contact-list-header__new-message'>
             <Link to={"/"}>
                 <span className='contact-list-header__title'>

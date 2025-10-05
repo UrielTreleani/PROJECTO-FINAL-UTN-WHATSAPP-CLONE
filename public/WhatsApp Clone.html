@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="./WhatsApp Clone_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/public/whatsapp-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Clone</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/uriel/OneDrive/Desktop/Clases/Diplomatura/Proyecto/TP-FINAL-UTN-WHATSAPP-CLONE/src/Components/ContactList/ContactList.css">.loader-contacts{
+    display: flex;
+    position: relative;
+    top: 100px;
+    justify-content: center;
+}
+
+.contact__container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-right: 15px;
+    width: 450px;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    color: #fafafa;
+    height: 72px;
+    font-size: 14px;
+}
+
+.contact-info div{
+    margin: 0 0 0 5px;
+}
+
+.contact-name{
+    font-size: 16px;
+}
+
+.contact-last-message{
+    color: #abacac;
+    width: 100%;
+}
+
+.profile-image__container{
+    padding: 13px 15px 0 13px;
+    border-radius: 50%;
+    overflow:hidden;
+}
+
+.profile-image__container img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid  rgb(84, 121, 202);
+}
+
+@media screen and (max-width: 840px){
+    .contact__container{
+    
+    }
+}</style><style type="text/css" data-vite-dev-id="C:/Users/uriel/OneDrive/Desktop/Clases/Diplomatura/Proyecto/TP-FINAL-UTN-WHATSAPP-CLONE/src/Components/ContactListHeader/ContactListHeader.css">.contact-list-header__container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    color: #FAFAFA;
+}
+
+.contact-list-header__new-message{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 0 0;
+}
+
+.contact-list-header__buttons-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-right: 10px;
+}
+
+.contact-list-header__buttons-container button{
+    background-color: #161717;
+    color: white;
+    border: none;
+}
+
+.contact-list-header__title{
+    font-size: 23px;
+    color: #FAFAFA;
+}
+
+.contact-list-header__search-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-list-header__search{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    padding: 0 0 0 10px;
+    margin: 15px 15px 0 0;
+    color: #abacac;
+    background-color: #2e2f2f;
+    border-radius: 15px;
+    height: 35px;
+}
+
+.contact-list-header__chat-filters{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 450px;
+}
+
+.contact-list-header__chat-filters :nth-child(1){
+    border-color: rgb(63, 95, 163);
+    color: rgb(84, 121, 202);
+}
+
+.contact-list-header__filter{
+    border: #2e2f2f 2px solid;
+    border-radius: 15px;
+    color: #abacac;
+    padding: 0 15px;
+}
+
+.header__icon{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1024px){
+    .contact-list-header__container{
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .contact-list-header__search{
+        width: 100%;
+    }
+}</style><style type="text/css" data-vite-dev-id="C:/Users/uriel/OneDrive/Desktop/Clases/Diplomatura/Proyecto/TP-FINAL-UTN-WHATSAPP-CLONE/src/Components/ContactListAside/ContactListAside.css">.contact-list__aside-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 64px;
+    height: 100vh;
+    background-color: #1d1f1f;
+    border-right: #343636 1px solid;
+}
+
+.contact-list__aside-icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    gap: 10px;
+}
+
+.aside-icon{
+    font-size: 24px;
+    color: #a5a5a5;
+}
+
+.blue-icon{
+    color: rgb(84, 121, 202);   
+}</style><style type="text/css" data-vite-dev-id="C:/Users/uriel/OneDrive/Desktop/Clases/Diplomatura/Proyecto/TP-FINAL-UTN-WHATSAPP-CLONE/src/Screens/HomeScreen/HomeScreen.css">.home-screen__container{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.home-screen__contacts-container{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    background-color:#161717;
+    border-right: 1px #414242 solid ;
+}
+
+
+.home-screen__unselected-contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color:  #fafafa;
+    background-color: #161717;
+}
+
+
+@media screen and (max-width: 1024px){
+    .home-screen__unselected-contact-container{
+        display: none;
+    }
+
+    .home-screen__contacts-container{
+        width: 100%;
+        justify-content: center;
+        padding: 0 10px;
+    }
+}</style><style type="text/css" data-vite-dev-id="C:/Users/uriel/OneDrive/Desktop/Clases/Diplomatura/Proyecto/TP-FINAL-UTN-WHATSAPP-CLONE/src/Components/Message/Message.css">.message__content-container{
+    width: 100%;
+}
+
+.message-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 35px;
+    gap: 5px;
+    max-width: 600px;
+    height: 100%;
+    margin: 25px 0 0 0;
+    padding: 8px;
+}
+
+.message-content p{
+    word-wrap: break-word;
+    width: 100%;
+    color: #eef1f0;
+}
+
+.message-author__other{
+    display: flex;
+    justify-content: start;
+}
+
+.message-author__yo{
+    display: flex;
+    justify-content: end;
+}
+
+.message-author__other div{
+    display: flex;
+    justify-content: start;
+    background-color: #144d37;
+}
+
+.message-author__yo div{
+    display: flex;
+    justify-content: end;
+    background-color: #242626;
+}
+
+.message__timestamp-container{
+    display: flex;
+    align-self: flex-end;
+    height: 100%;
+}
+
+.message__timestamp-container span{
+    font-size: 10px;
+    color: #9fa8a0;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/uriel/OneDrive/Desktop/Clases/Diplomatura/Proyecto/TP-FINAL-UTN-WHATSAPP-CLONE/src/Components/NewMessageForm/NewMessageForm.css">    .section-messages__message-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    background-color: transparent;
+    }
+
+    .section-messages__message-form-container form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    }
+
+    .section-messages__message-form-container input {
+    flex: 1;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #242626;
+    color: #fafafa;
+    outline: none;
+    max-height: 100px;
+    }
+
+    .section-messages__message-form-container button {
+    background-color: rgb(84, 121, 202);
+    border: none;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+
+    .send-button__icon{
+        font-size: 15px;
+        color: black;
+    }
+</style><style type="text/css" data-vite-dev-id="C:/Users/uriel/OneDrive/Desktop/Clases/Diplomatura/Proyecto/TP-FINAL-UTN-WHATSAPP-CLONE/src/Screens/MessageScreen/MessageScreen.css">.message-screen__container {
+    display: flex;
+    flex-direction: row;
+    background-color: #161717; 
+    height: 100vh;
+    width: 100%;
+}
+
+.message-screen__contact-detail-loader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.message-screen__contact-detail-loader span{
+    color: white;
+}
+
+.message-screen__contacts-container {
+    border-right: 1px solid #414242;
+}
+
+.message-screen__section-message-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #0d0d0d;
+}
+
+.message-screen__section-message {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    overflow: hidden;
+}
+
+.message-screen__contact-header-container {
+    background-color: #202c33;
+    border-bottom: 1px solid #414242;
+}
+
+.message-screen__messages-container {
+    flex: 1;
+    background-color: #111b21;
+    overflow-y: auto;
+    padding: 12px 62px;
+    background-image: url("/fondo-chat.jpg");
+}
+
+.message-screen__form-container {
+    background-color: #161717;
+    padding: 8px;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/uriel/OneDrive/Desktop/Clases/Diplomatura/Proyecto/TP-FINAL-UTN-WHATSAPP-CLONE/src/Components/ContactInfoHeader/ContactInfoHeader.css">.contact-header__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3px 0;
+    background-color: #161717;
+}
+
+.contact-header__buttons-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 13px 0 0;
+    gap: 15px;
+    align-items: center ;
+}
+
+.contact-header__contact-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin: 0 0 0 10px;
+}
+
+.contact-header__contact-name{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: white;
+}
+
+.contact-header__contact-last-connection{
+    font-size: 15px;
+}
+
+.contact-header__profile-image-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 4px 0;
+}
+
+.contact-header__profile-image-container img{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid  rgb(84, 121, 202);
+}
+
+.contact-header__icon{
+    font-size: 25px;
+    color: white;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/uriel/OneDrive/Desktop/Clases/Diplomatura/Proyecto/TP-FINAL-UTN-WHATSAPP-CLONE/src/styles/global.css">@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}</style></head>
+  <body>
+    <div id="root"><div><div class="home-screen__container"><div><div class="contact-list__aside-container"><div class="contact-list__aside-icon-container"><span><i class="bi bi-chat-left-text-fill aside-icon blue-icon"></i></span><span><i class="bi bi-filter-circle aside-icon"></i></span><span><i class="bi bi-chat-quote aside-icon"></i></span><span><i class="bi bi-people aside-icon"></i></span></div><div class="contact-list__aside-icon-container"><span><i class="bi bi-gear aside-icon"></i></span><span><i class="bi bi-person aside-icon"></i></span></div></div></div><div class="home-screen__contacts-container"><div style="
+    width: 100%;
+"><div><div class="contact-list-header__container"><div class="contact-list-header__new-message"><a href="http://localhost:5173/" data-discover="true"><span class="contact-list-header__title">WhatsApp Clone</span></a><div class="contact-list-header__buttons-container"><button><i class="bi bi-send-plus header-icon"></i></button><button><i class="bi bi-three-dots-vertical header-icon"></i></button></div></div><div class="contact-list-header__search-section"><div><div><div class="contact-list-header__search"><i class="bi bi-search header-icon"></i><span>Buscar un chat o iniciar uno nuevo</span></div></div></div><div class="contact-list-header__chat-filters"><span class="contact-list-header__filter">Todos</span><span class="contact-list-header__filter">No leídos</span><span class="contact-list-header__filter">Favoritos</span><span class="contact-list-header__filter">Grupos</span></div></div></div></div><div><div><a href="http://localhost:5173/contacto/1" data-discover="true"><div class="contact__container"><div class="contact-info"><div><h2 class="contact-name">Joaco</h2><span class="contact-last-message">Perfecto, mañana nos vemos</span></div><div class="profile-image__container"><img width="150px" src="./WhatsApp Clone_files/profile-image__joaco.jpg"></div></div></div></a><a href="http://localhost:5173/contacto/2" data-discover="true"><div class="contact__container"><div class="contact-info"><div><h2 class="contact-name">Gonzalo</h2><span class="contact-last-message">Bueno, después paso y la reviso</span></div><div class="profile-image__container"><img width="150px" src="./WhatsApp Clone_files/profile-image__gonzalo.jpg"></div></div></div></a><a href="http://localhost:5173/contacto/3" data-discover="true"><div class="contact__container"><div class="contact-info"><div><h2 class="contact-name">Bruno</h2><span class="contact-last-message">De nada, nos vemos mañana.</span></div><div class="profile-image__container"><img width="150px" src="./WhatsApp Clone_files/profile-image__bruno.png"></div></div></div></a><a href="http://localhost:5173/contacto/4" data-discover="true"><div class="contact__container"><div class="contact-info"><div><h2 class="contact-name">Joel</h2><span class="contact-last-message">Genial, así lo reviso tranquilo.</span></div><div class="profile-image__container"><img width="150px" src="./WhatsApp Clone_files/profile-image__joel.png"></div></div></div></a><a href="http://localhost:5173/contacto/5" data-discover="true"><div class="contact__container"><div class="contact-info"><div><h2 class="contact-name">Ulises</h2><span class="contact-last-message">Sí, meté un pibe, mové el banco, hacé algo.</span></div><div class="profile-image__container"><img width="150px" src="./WhatsApp Clone_files/profile-image__ulises.jpg"></div></div></div></a></div></div></div></div><div class="home-screen__unselected-contact-container"><div><div class="flex items-center justify-center"><svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="45" fill="none" stroke="rgb(84, 121, 202)" stroke-width="8" stroke-linecap="round" stroke-dasharray="70 200" stroke-dashoffset="0"><animatetransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="1s" repeatCount="indefinite"></animatetransform></circle></svg></div></div><span>Selecciona un contacto</span></div></div></div></div>
+    <script type="module" src="./WhatsApp Clone_files/main.jsx"></script>
+  
+
+</body></html>
