@@ -9,9 +9,8 @@ import ContactListAside from "../../Components/ContactListAside/ContactListAside
 import WhatsAppSpinner from "../../Components/Loader/Loader";
 import { ContactHeader } from "../../Components/ContactInfoHeader/ContactInfoHeader";
 
-
 export function MessageScreen() {
-  const { contactDetail, isContactDetailLoading, onCreateNewMenssage } =
+  const { contactDetail, isContactDetailLoading, onCreateNewMessage } =
     useContext(ContactDetailContext);
 
   return (
@@ -23,13 +22,18 @@ export function MessageScreen() {
         <div>
           <ContactListHeader />
         </div>
-        <div >
-          <ContactList/>
+        <div>
+          <ContactList />
         </div>
       </div>
       <div className="message-screen__section-message-container">
         {isContactDetailLoading ? (
-          <WhatsAppSpinner />
+          <div className="message-screen__contact-detail-loader">
+            <WhatsAppSpinner />
+            <span>
+              Cargando mensajes...
+            </span>
+          </div>
         ) : contactDetail ? (
           <div className="message-screen__section-message">
             <div className="message-screen__contact-header-container">
@@ -42,13 +46,13 @@ export function MessageScreen() {
             <div className="message-screen__messages-container">
               <MessageList messages={contactDetail.messages} />
             </div>
+            <div className="message-screen__form-container">
+              <NewMessageForm onCreateNewMessage={onCreateNewMessage} />
+            </div>
           </div>
         ) : (
           <span>Mensaje no encontrado</span>
         )}
-        <div className="message-screen__form-container">
-          <NewMessageForm onCreateNewMessage={onCreateNewMenssage} />
-        </div>
       </div>
     </div>
   );

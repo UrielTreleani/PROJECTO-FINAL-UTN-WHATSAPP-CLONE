@@ -8,7 +8,7 @@ const MessageList = (props)=>{
                 <Message
                 key={message.id}
                 author={message.author}
-                timestap={message.timestap}
+                timestamp={message.timestamp}
                 content={message.content}
                 id={message.id}
                 />

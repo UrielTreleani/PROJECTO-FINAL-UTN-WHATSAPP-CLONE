@@ -7,7 +7,9 @@ function Message(props){
             <div className="message-content">
                 <span>{props.auhtor}</span>
                 <p>{props.content}</p>
-                <span>{props.timestap}</span>
+                <div className="message__timestamp-container">
+                    <span>{props.timestamp}</span>
+                </div>
             </div>
         </div>
     )

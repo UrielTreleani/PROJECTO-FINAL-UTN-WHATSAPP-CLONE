@@ -7,7 +7,7 @@ export const ContactDetailContext = createContext(
     {
     isContactDetailLoading: false,
     contactDetail: null,
-    onCreateNewMenssage: (new_message) => {}
+    onCreateNewMessage: (new_message) => {}
     }
 );
 
@@ -39,12 +39,12 @@ const ContactDetailContextProvider = (props)=>{
         [id_contacto]
     )
 
-    const onCreateNewMenssage = (new_message)=>{
+    const onCreateNewMessage = (new_message)=>{
 
         const new_message_object = {
             author: "Yo",
-            content: new_message,
-            timestap: "19:00",
+            content: new_message.content,
+            timestamp: new_message.timestamp,
             id: contactDetail.messages.length + 1
         }
 
@@ -59,7 +59,7 @@ const ContactDetailContextProvider = (props)=>{
         {
             contactDetail: contactDetail,
             isContactDetailLoading: isContactDetailLoading,
-            onCreateNewMenssage: onCreateNewMenssage
+            onCreateNewMessage: onCreateNewMessage
         }
     }>
             <Outlet/>

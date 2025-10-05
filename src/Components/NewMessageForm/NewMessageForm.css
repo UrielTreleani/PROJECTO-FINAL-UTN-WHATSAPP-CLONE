@@ -3,10 +3,7 @@
     align-items: center;
     justify-content: center;
     padding: 8px 12px;
-    background-color: #1f1f1f;
-    border-top: 1px solid #333;
-    /* que el form quede dentro del flujo del chat, no flotando global */
-    position: relative;
+    background-color: transparent;
     }
 
     .section-messages__message-form-container form {
@@ -16,31 +13,28 @@
     width: 100%;
     }
 
-    .section-messages__message-form-container textarea {
+    .section-messages__message-form-container input {
     flex: 1;
-    resize: none;
     border: none;
     border-radius: 20px;
     padding: 10px 15px;
     font-size: 14px;
-    background-color: #2a2a2a;
+    background-color: #242626;
     color: #fafafa;
     outline: none;
-    max-height: 120px; /* para que no se dispare demasiado */
-    overflow-y: auto;
+    max-height: 100px;
     }
 
     .section-messages__message-form-container button {
-    background-color: #00a884; /* verde estilo WhatsApp */
+    background-color: rgb(84, 121, 202);
     border: none;
     color: #fff;
     padding: 10px 16px;
     border-radius: 50%;
     cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.2s ease;
     }
 
-    .section-messages__message-form-container button:hover {
-        background-color: #029973;
+    .send-button__icon{
+        font-size: 15px;
+        color: black;
     }
