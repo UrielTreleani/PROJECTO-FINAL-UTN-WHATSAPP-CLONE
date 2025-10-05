@@ -23,12 +23,17 @@
     font-size: 14px;
 }
 
+.contact-info div{
+    margin: 0 0 0 5px;
+}
+
 .contact-name{
     font-size: 16px;
 }
 
 .contact-last-message{
     color: #abacac;
+    width: 100%;
 }
 
 .profile-image__container{

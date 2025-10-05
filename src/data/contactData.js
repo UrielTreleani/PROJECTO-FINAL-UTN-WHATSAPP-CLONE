@@ -136,7 +136,7 @@ const contacts = [
         name: 'Ulises',
         last_time_connected: 'últ. vez hoy a la(s) 09:33',
         profile_img: '/profile-image__ulises.jpg',
-        last_message: "Genial, así lo reviso tranquilo.",
+        last_message: "Sí, meté un pibe, mové el banco, hacé algo.",
         messages: [
             {
                 id: 1,
@@ -177,7 +177,7 @@ const contacts = [
             {
                 id: 7,
                 author: 'Ulises',
-                content: "Sí, meté un pibe, mové el banco, hacé algo. Boca no puede seguir jugando así",
+                content: "Sí, meté un pibe, mové el banco, hacé algo.",
                 timestamp: '21:15'
             }
         ]
