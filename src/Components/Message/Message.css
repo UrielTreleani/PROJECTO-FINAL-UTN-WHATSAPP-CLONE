@@ -20,6 +20,7 @@
     word-wrap: break-word;
     width: 100%;
     color: #eef1f0;
+    font-size: 16px;
 }
 
 .message-author__other{
@@ -53,4 +54,37 @@
 .message__timestamp-container span{
     font-size: 10px;
     color: #9fa8a0;
+}
+
+
+@media screen and (max-width: 1024px){
+    .message-content{
+        max-width: 400px;
+    }
+    
+    .message-content p{
+    font-size: 14px;
+}
+}
+
+@media screen and (max-width: 768px){
+
+    .message-content{
+        max-width: 350px;
+    }
+
+    .message-content p{
+    font-size: 12px;
+}
+}
+
+@media screen and (max-width: 465px){
+
+    .message-content{
+        max-width: 200px;
+    }
+
+    .message-content p{
+    font-size: 10px;
+}
 }

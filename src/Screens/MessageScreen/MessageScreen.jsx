@@ -15,7 +15,7 @@ export function MessageScreen() {
 
   return (
     <div className="message-screen__container">
-      <div className="contact-list__aside-container">
+      <div className="message-screen__aside-container">
         <ContactListAside />
       </div>
       <div className="message-screen__contacts-container">

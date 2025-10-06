@@ -26,15 +26,13 @@
     }
 
     .section-messages__message-form-container button {
-    background-color: rgb(84, 121, 202);
     border: none;
-    color: #fff;
     padding: 10px 16px;
-    border-radius: 50%;
     cursor: pointer;
+    background-color: transparent;
     }
 
     .send-button__icon{
-        font-size: 15px;
-        color: black;
+        font-size: 30px;
+        color: rgb(84, 121, 202);  
     }

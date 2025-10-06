@@ -55,3 +55,26 @@
     background-color: #161717;
     padding: 8px;
 }
+
+
+@media screen and (max-width: 1024px){
+    .message-screen__contacts-container{
+        display: none;
+    }
+
+    .message-screen__aside-container{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .message-screen__messages-container{
+        padding: 12px 25px;
+    }
+}
+
+@media screen and (max-width: 465px){
+    .message-screen__messages-container{
+        padding: 8px 10px;
+    }
+}

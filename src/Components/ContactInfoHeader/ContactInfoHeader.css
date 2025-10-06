@@ -23,6 +23,10 @@
     margin: 0 0 0 10px;
 }
 
+.contact-header__back-icon{
+    display: none;
+}
+
 .contact-header__contact-name{
     display: flex;
     flex-direction: column;
@@ -52,4 +56,54 @@
 .contact-header__icon{
     font-size: 25px;
     color: white;
+}
+
+@media screen and (max-width: 1024px){
+
+    .contact-header__back-icon{
+        display: flex;
+        padding: 0 5px 0 0;
+        font-size: 25px;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .contact-header__profile-image-container img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-header__contact-name{
+        font-size: 16px;
+    }
+
+    .contact-header__contact-last-connection{
+        font-size: 12px;
+    }
+
+    .contact-header__icon{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 465px){
+
+    .contact-header__profile-image-container img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact-header__contact-name{
+        font-size: 12px;
+    }
+
+    .contact-header__contact-last-connection{
+        font-size: 10px;
+    }
+
+    .contact-header__icon{
+        font-size: 15px;
+    }
 }

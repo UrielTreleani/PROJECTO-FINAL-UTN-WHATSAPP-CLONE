@@ -1,3 +1,4 @@
+import { Link } from "react-router"
 import "./ContactInfoHeader.css"
 
 
@@ -6,6 +7,9 @@ export function ContactHeader(props){
 return(
     <div className="contact-header__container">
         <div className="contact-header__contact-info">
+                <Link to={"/"}>
+                    <i className="bi bi-arrow-left contact-header__back-icon"></i>
+                </Link>
             <div className="contact-header__profile-image-container">
                 <img src={props.img} alt="profile-img"/>
             </div>

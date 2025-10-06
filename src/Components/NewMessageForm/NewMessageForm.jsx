@@ -22,7 +22,7 @@ export const NewMessageForm = (props)=>{
             <form onSubmit={handleSubmit}>
                 <input placeholder= "Escribe un mensaje" type="text" name="mensaje" id="mensaje"/>
                 <button type="submit">
-                    <i className="bi bi-caret-right-fill send-button__icon"></i>
+                    <i className="bi bi-arrow-right-circle send-button__icon"></i>
                 </button>
             </form>
         </div>
