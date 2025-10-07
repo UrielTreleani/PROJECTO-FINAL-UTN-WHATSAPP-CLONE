@@ -10,15 +10,14 @@
     border-radius: 10px;
     height: 35px;
     gap: 5px;
-    max-width: 600px;
+    margin: 20px 0;
     height: 100%;
-    margin: 25px 0 0 0;
     padding: 8px;
 }
 
 .message-content p{
     word-wrap: break-word;
-    width: 100%;
+    max-width: 700px;
     color: #eef1f0;
     font-size: 16px;
 }
@@ -58,20 +57,14 @@
 
 
 @media screen and (max-width: 1024px){
-    .message-content{
-        max-width: 400px;
-    }
     
     .message-content p{
     font-size: 14px;
+    max-width: 600px;
 }
 }
 
 @media screen and (max-width: 768px){
-
-    .message-content{
-        max-width: 350px;
-    }
 
     .message-content p{
     font-size: 12px;
@@ -80,11 +73,8 @@
 
 @media screen and (max-width: 465px){
 
-    .message-content{
-        max-width: 200px;
-    }
-
     .message-content p{
     font-size: 10px;
+    max-width: 300px;
 }
 }
