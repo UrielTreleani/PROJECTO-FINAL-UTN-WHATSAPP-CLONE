@@ -17,7 +17,7 @@
 
 .message-content p{
     word-wrap: break-word;
-    max-width: 700px;
+    max-width: 400px;
     color: #eef1f0;
     font-size: 16px;
 }
