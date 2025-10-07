@@ -5,7 +5,7 @@ import { Link } from 'react-router'
 function ContactListHeader() {
     return (
     <div className='contact-list__header'>
-        <div className='contact-list-header__new-message'>
+        <div className='contact-list-header__title-container'>
             <Link to={"/"}>
                 <span className='contact-list-header__title'>
                     WhatsApp Clone

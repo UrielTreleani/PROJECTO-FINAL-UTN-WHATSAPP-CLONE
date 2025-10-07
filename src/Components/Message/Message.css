@@ -68,6 +68,7 @@
 
     .message-content p{
     font-size: 12px;
+    max-width: 350px;
 }
 }
 

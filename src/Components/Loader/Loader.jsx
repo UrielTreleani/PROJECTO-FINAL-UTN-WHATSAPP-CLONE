@@ -1,5 +1,5 @@
     export default function WhatsAppSpinner({
-    size = 40,
+    size = 90,
     color = 'rgb(84, 121, 202)'
     }) {
     return (

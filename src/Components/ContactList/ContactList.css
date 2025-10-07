@@ -50,7 +50,29 @@
     border: 2px solid  rgb(84, 121, 202);
 }
 
+
+@media screen and (min-width: 2900px){
+    .contact__container{
+        width: 800px;
+        height: 100px;
+    }
+
+    .contact-name{
+        font-size: 32px;
+    }
+
+    .contact-last-message{
+        font-size: 26px;
+    }
+
+    .profile-image__container img{
+        height: 65px;
+        width: 65px;
+    }
+}
+
 @media screen and (max-width: 550px){
+
     .contact__container{
     width: 100%;
     }

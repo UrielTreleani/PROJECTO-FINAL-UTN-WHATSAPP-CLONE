@@ -25,6 +25,18 @@
     color: rgb(84, 121, 202);   
 }
 
+
+@media screen and (min-width: 2900px){
+    .contact-list__aside-container{
+        width: 130px;
+    }
+
+        .contact-list__aside-icon-container i{
+        font-size: 40px;
+    }
+}
+
+
 @media screen and (max-width: 550px){
     .contact-list__aside-container{
         flex-direction: row;
