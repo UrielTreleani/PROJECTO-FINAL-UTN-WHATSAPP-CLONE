@@ -58,6 +58,35 @@
     color: white;
 }
 
+@media screen and (min-width: 1600px){
+
+    .contact-header__back-icon{
+        display: flex;
+        padding: 0 5px 0 0;
+        font-size: 30px;
+        color: white;
+    }
+
+    .contact-header__profile-image-container img{
+        width: 65px;
+        height: 65px;
+    }
+
+    .contact-header__contact-name{
+        font-size: 30px;
+    }
+
+    .contact-header__contact-last-connection{
+        font-size: 20px;
+    }
+
+    .contact-header__icon{
+        font-size: 30px;
+    }
+
+}
+
+
 @media screen and (max-width: 1024px){
 
     .contact-header__back-icon{

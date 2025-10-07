@@ -26,7 +26,7 @@
 }
 
 
-@media screen and (min-width: 2900px){
+@media screen and (min-width: 1600px){
     .contact-list__aside-container{
         width: 130px;
     }

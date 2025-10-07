@@ -80,7 +80,7 @@
 }
 
 
-@media screen and (min-width: 2900px){
+@media screen and (min-width: 1600px){
     .contact-list-header__title{
         font-size: 40px;
     }
