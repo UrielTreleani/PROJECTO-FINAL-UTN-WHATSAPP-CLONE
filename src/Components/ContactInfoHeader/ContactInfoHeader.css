@@ -7,6 +7,10 @@
     background-color: #161717;
 }
 
+.contact-header-ligth-theme{
+    background-color: white;
+}
+
 .contact-header__buttons-container{
     display: flex;
     flex-direction: row;
@@ -25,6 +29,7 @@
 
 .contact-header__back-icon{
     display: none;
+    color: white;
 }
 
 .contact-header__contact-name{
@@ -34,8 +39,17 @@
     color: white;
 }
 
+.contact-name-ligth-theme{
+    color: black;
+}
+
 .contact-header__contact-last-connection{
     font-size: 15px;
+    color: white;
+}
+
+.last-connection-ligth-theme{
+    color: black;
 }
 
 .contact-header__profile-image-container{
@@ -58,13 +72,16 @@
     color: white;
 }
 
+.header-icon-ligth-theme{
+    color: black;
+}
+
 @media screen and (min-width: 1600px){
 
     .contact-header__back-icon{
         display: flex;
         padding: 0 5px 0 0;
         font-size: 30px;
-        color: white;
     }
 
     .contact-header__profile-image-container img{
@@ -93,7 +110,6 @@
         display: flex;
         padding: 0 5px 0 0;
         font-size: 25px;
-        color: white;
     }
 }
 

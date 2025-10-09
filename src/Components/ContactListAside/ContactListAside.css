@@ -8,6 +8,11 @@
     border-right: #343636 1px solid;
 }
 
+.aside-ligth-theme{
+    background-color: white;
+    border-right: black 1px solid;
+}
+
 .contact-list__aside-icon-container{
     display: flex;
     flex-direction: column;
@@ -19,6 +24,10 @@
 .aside-icon{
     font-size: 24px;
     color: #a5a5a5;
+}
+
+.aside-icon-ligth-theme{
+    color: black;
 }
 
 .blue-icon{

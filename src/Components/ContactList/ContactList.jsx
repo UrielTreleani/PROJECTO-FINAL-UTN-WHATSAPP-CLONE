@@ -3,6 +3,7 @@ import { ContactListContext } from "../../Contexts/ContactListContext"
 import { Link } from "react-router"
 import "./ContactList.css"
 import WhatsAppSpinner from "../../Components/Loader/Loader";
+import { ThemeContext } from "../../Contexts/ThemeSwichContext";
 
 export const ContactList = () => {
 
@@ -31,15 +32,17 @@ const ContactItem = (props)=>{
 
     const contact = props.contact
 
+    const {theme, toggleTheme} = useContext(ThemeContext)
+
     return(
         <Link to={"/contacto/" + contact.id}>
             <div className="contact__container">
                 <div className="contact-info">
                     <div>
-                        <h2 className="contact-name">
+                        <h2 className={ theme === false ? "contact-name" : "contact-name contact-name-ligth-theme"}>
                             {contact.name}
                         </h2>
-                        <span className="contact-last-message">
+                        <span className={ theme === false ? "contact-last-message" : "contact-last-message last-message-ligth-theme"}>
                             {contact.last_message}
                         </span>
                     </div>

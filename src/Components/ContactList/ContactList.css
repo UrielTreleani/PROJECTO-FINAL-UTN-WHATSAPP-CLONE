@@ -29,11 +29,20 @@
 
 .contact-name{
     font-size: 16px;
+    color: white;
+}
+
+.contact-name-ligth-theme{
+    color: black;
 }
 
 .contact-last-message{
     color: #abacac;
     width: 100%;
+}
+
+.last-message-ligth-theme{
+    color: #444444;
 }
 
 .profile-image__container{

@@ -23,6 +23,10 @@
     border-right: 1px solid #414242;
 }
 
+.contacts-container-ligth-theme{
+    background-color: white;
+}
+
 .message-screen__section-message-container {
     display: flex;
     flex-direction: column;

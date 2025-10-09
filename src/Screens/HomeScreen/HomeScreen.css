@@ -14,6 +14,11 @@
     height: 100%;
 }
 
+.contacts-container-ligth-theme{
+    background-color: white;
+    border-right: 1px black solid ;
+}
+
 
 .home-screen__unselected-contact-container{
     display: flex;
@@ -23,6 +28,11 @@
     width: 100%;
     color:  #fafafa;
     background-color: #161717;
+}
+
+.unselected-contact-ligth-theme{
+    color: black;
+    background-color: white;
 }
 
 

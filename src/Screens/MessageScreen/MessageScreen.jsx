@@ -8,17 +8,20 @@ import ContactListHeader from "../../Components/ContactListHeader/ContactListHea
 import ContactListAside from "../../Components/ContactListAside/ContactListAside";
 import WhatsAppSpinner from "../../Components/Loader/Loader";
 import { ContactHeader } from "../../Components/ContactInfoHeader/ContactInfoHeader";
+import { ThemeContext } from "../../Contexts/ThemeSwichContext";
 
 export function MessageScreen() {
   const { contactDetail, isContactDetailLoading, onCreateNewMessage } =
     useContext(ContactDetailContext);
+
+    const {theme, toggleTheme} = useContext(ThemeContext)
 
   return (
     <div className="message-screen__container">
       <div className="message-screen__aside-container">
         <ContactListAside />
       </div>
-      <div className="message-screen__contacts-container">
+      <div className={ theme === false ? "message-screen__contacts-container" : "message-screen__contacts-container contacts-container-ligth-theme"}>
         <div>
           <ContactListHeader />
         </div>
