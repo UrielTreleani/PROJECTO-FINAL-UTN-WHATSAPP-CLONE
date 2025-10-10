@@ -13,7 +13,7 @@ import { Children, createContext, useState } from "react"
         }
 
         return(
-            <ThemeContext.Provider value={{theme, toggleTheme, isThemeSwitching}}>
+            <ThemeContext.Provider value={{theme, toggleTheme}}>
                 {children}
             </ThemeContext.Provider>
         )
