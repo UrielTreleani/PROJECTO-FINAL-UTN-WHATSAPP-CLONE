@@ -31,9 +31,9 @@ export function MessageScreen() {
       </div>
       <div className="message-screen__section-message-container">
         {isContactDetailLoading ? (
-          <div className="message-screen__contact-detail-loader">
+          <div className={ theme === false ? "message-screen__contact-detail-loader" : "message-screen__contact-detail-loader contact-detail-loader-light-theme"}>
             <WhatsAppSpinner />
-            <span>
+            <span className={ theme === false ? "loader-text" : "loader-text loader-text-light-theme"}>
               Cargando mensajes...
             </span>
           </div>
@@ -46,10 +46,10 @@ export function MessageScreen() {
                 last_connection={contactDetail?.last_time_connected}
               />
             </div>
-            <div className="message-screen__messages-container">
+            <div className={ theme === false ? "message-screen__messages-container" : "message-screen__messages-container messages-container-light-theme"}>
               <MessageList messages={contactDetail.messages} />
             </div>
-            <div className="message-screen__form-container">
+            <div className={ theme === false ? "message-screen__form-container" : "message-screen__form-container form-container-light-theme"}>
               <NewMessageForm onCreateNewMessage={onCreateNewMessage} />
             </div>
           </div>

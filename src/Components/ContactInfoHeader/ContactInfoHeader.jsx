@@ -11,7 +11,7 @@ return(
     <div className={ theme === false ? "contact-header__container" : "contact-header__container contact-header-ligth-theme"}>
         <div className="contact-header__contact-info">
                 <Link to={"/"}>
-                    <i className="bi bi-arrow-left contact-header__back-icon"></i>
+                    <i className={ theme === false ? "bi bi-arrow-left contact-header__back-icon" : "bi bi-arrow-left contact-header__back-icon header-icon-ligth-theme"}></i>
                 </Link>
             <div className="contact-header__profile-image-container">
                 <img src={props.img} alt="profile-img"/>

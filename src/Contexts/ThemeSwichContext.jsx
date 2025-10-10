@@ -7,14 +7,13 @@ import { Children, createContext, useState } from "react"
     const ThemeProvider = ({children}) =>{
         
         const [theme, setTheme] = useState(false)
-    
         
         const toggleTheme = ()=>{
             setTheme(!theme)
         }
 
         return(
-            <ThemeContext.Provider value={{theme, toggleTheme}}>
+            <ThemeContext.Provider value={{theme, toggleTheme, isThemeSwitching}}>
                 {children}
             </ThemeContext.Provider>
         )

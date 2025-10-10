@@ -35,13 +35,13 @@
 .message-author__other div{
     display: flex;
     justify-content: start;
-    background-color: #144d37;
+    background-color: #242626;
 }
 
 .message-author__yo div{
     display: flex;
     justify-content: end;
-    background-color: #242626;
+    background-color: #144d37;
 }
 
 .message__timestamp-container{

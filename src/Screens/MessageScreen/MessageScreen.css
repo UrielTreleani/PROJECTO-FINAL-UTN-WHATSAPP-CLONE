@@ -13,10 +13,20 @@
     align-items: center;
     height: 100%;
     width: 100%;
+    background-color: #161717;
 }
 
-.message-screen__contact-detail-loader span{
+.contact-detail-loader-light-theme{
+    background-color: white;
+}
+
+.loader-text{
     color: white;
+    font: 20px;
+}
+
+.loader-text-light-theme{
+    color: black;
 }
 
 .message-screen__contacts-container {
@@ -55,11 +65,18 @@
     background-image: url("/fondo-chat.jpg");
 }
 
+.messages-container-light-theme{
+    background-image: url("/fondo-chat-light-theme.jpg");
+}
+
 .message-screen__form-container {
     background-color: #161717;
     padding: 8px;
 }
 
+.form-container-light-theme{
+    background-color: white;
+}
 
 @media screen and (min-width: 1600px){
     .contact-list__aside-container{

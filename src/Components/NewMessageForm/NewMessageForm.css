@@ -6,6 +6,10 @@
     background-color: transparent;
     }
 
+    .form-container-light-theme{
+        background-color: white;
+    }
+
     .section-messages__message-form-container form {
     display: flex;
     align-items: center;
@@ -13,7 +17,7 @@
     width: 100%;
     }
 
-    .section-messages__message-form-container input {
+    .section-messages__input {
     flex: 1;
     border: none;
     border-radius: 20px;
@@ -23,6 +27,15 @@
     color: #fafafa;
     outline: none;
     max-height: 100px;
+    }
+
+    .input-light-theme{
+        background-color: rgb(201, 201, 201);
+        color: black;
+    }
+
+    .input-light-theme::placeholder{
+        color: black;
     }
 
     .section-messages__message-form-container button {
